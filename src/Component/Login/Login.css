@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;700&display=swap');
+
+body {
+    background: #D6E1FF;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    overflow: auto;
+}
+
+.box{ 
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    max-width: 480px;
+    margin-top: 15vh;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+   
+}
+.header img{
+    height: 4em;
+}
+.text {
+    font-size: 4.5vw; 
+    font-weight: 700;
+    color: #40455B;
+    position: relative;
+}
+
+
+
+.form {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 390px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.input img {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    height: 16px;
+}
+
+.input input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 1rem; 
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+ .submit {
+    width: 60%;
+    height: 50px;
+    color: #fff;
+    background-color: #22620b;
+    border-radius: 50px;
+    font-size: 1rem; 
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+} 
+.login .btn{
+        background-color: #2447f8;
+        transition: background-color 0.3s ease;
+   
+}
+.login .btn:hover{
+   background-color: #2840b7;
+}
+.signup{
+    width: 30%;
+}
+.btn .signup{
+    background-color: #2341d4;   
+}
+.link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box {
+        margin-top: 10vh;
+        padding: 15px;
+    }
+
+    .text {
+        font-size: 6vw; 
+    }
+
+    .input {
+        height: 50px;
+        padding: 8px;
+    }
+
+    .input input {
+        font-size: 0.9rem; 
+    }
+
+    .submit {
+        width: 75%;
+        height: 45px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        margin-top: 8vh;
+        padding: 10px;
+        width: 80%;
+    }
+
+    .text {
+        font-size: 7vw; 
+    }
+
+    .input {
+        height: 45px;
+        padding: 3px;
+    }
+
+    .input input {
+        font-size: 0.85rem;
+    }
+
+
+    .submit {
+        width: 90%;
+        height: 40px;
+        font-size: 0.85rem;
+    }
+
+    .signup {
+        width: 60%;
+        height: 40px;
+        font-size: 0.85rem;
+        margin-top: 1.5em;
+        margin-right: 1em;
+    }
+    .login p{
+        margin-right: 5px;
+        margin-left: 8px;
+    }
+}
